@@ -36,32 +36,20 @@ body {
     font-size: 22px;
 }
 
-/* .btn_pesq {
-    text-align: right;
-    position: absolute;
-    top: 130px;
-    right: 22px;
-}
-
-.btn_pesq input[type="text"] {
-    max-width: 100%;
-    padding: 10px 40px;
-    border: 1px solid #133b66;
-    border-radius: 10px;
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
     font-size: 22px;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.btn_pesq a {
-    margin-top: 10px;
-    text-decoration: none;
-    padding: 12px 25px;
-    background-color: #133b66;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 18px;
-    margin-left: 10px;
-} */
+.rodape{
+
+    background-color: rgb(38, 107, 185);
+    color: #ffffff;
+}
 
 .main_banner {
     margin-top: -150px;
@@ -139,4 +127,29 @@ h2 {
         top: 30px;
         right: 20px;
     }
+}
+
+.container2{
+    font-family: 'Arial', sans-serif;
+    max-width: 1000px;
+    font-size: 24px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1, h3 {
+    color: #333;
+    margin-left: 50px;
+}
+
+h3 {
+    font-weight: bold;
+}
+.sobre-nos {
+    margin-bottom: 20px;
+}
+
+.sobre-nos p {
+    line-height: 1.5;
 }
