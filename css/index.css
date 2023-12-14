@@ -140,27 +140,3 @@ h2 {
         right: 20px;
     }
 }
-.container2{
-    font-family: 'Arial', sans-serif;
-    max-width: 1000px;
-    font-size: 24px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h1, h3 {
-    color: #333;
-    margin-left: 50px;
-}
-
-h3 {
-    font-weight: bold;
-}
-.sobre-nos {
-    margin-bottom: 20px;
-}
-
-.sobre-nos p {
-    line-height: 1.5;
-}
