@@ -12,6 +12,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.input-wrap {
+    width: 100%;
+}
+
 h1 {
     font-size: 28px;
     color: #333;
@@ -33,10 +44,9 @@ input {
     border-radius: 5px;
 }
 
-.choose-buttons {
+/* .choose-buttons {
     margin: 20px;
     text-align: center;
-
 }
 
 .choose-buttons a {
@@ -59,7 +69,7 @@ input {
     margin-top: 20px;
     justify-content: space-between;
     
-}
+} 
 
 .footer a {
     color: #133b66;
@@ -90,5 +100,51 @@ input {
 
 .registre-se a:hover {
     background-color: #0056b3;
-} 
+} */
 
+.buttons-wrap {
+    display: grid;
+    text-align: center;
+    column-gap: 16px;
+    row-gap: 30px;
+    margin: 30px 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'login proffesional register'
+        'forgot forgot forgot';
+}
+
+.buttons-wrap>a {
+    text-decoration: none;
+    outline: none;
+    padding: 8px 20px;
+    background-color: #133b66;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 19px;
+}
+
+.btn-login a {
+    grid-area: login;
+}
+
+.btn-proffesional a {
+    grid-area: proffesional;
+}
+
+.btn-register a {
+    grid-area: register;
+}
+
+.btn-forgot {
+    display: flex;
+    justify-content: center;
+    grid-area: forgot;
+}
+
+.btn-forgot a {
+    color: #133b66;
+    text-decoration: none;
+    padding: 5px 10px;
+}

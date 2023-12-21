@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: rgb(255, 255, 255);
@@ -7,12 +15,11 @@ body {
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
-    min-height: 100vh;
     text-align: left;
     position: relative;
 }
 
-.banner {
+/* .banner {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -22,9 +29,9 @@ body {
 .banner_top img {
     max-width: 100%;
     height: auto;
-}
+} */
 
-.new-button {
+/* .new-button {
     position: absolute;
     top: 50px;
     left: 160px;
@@ -34,16 +41,16 @@ body {
     color: #8b8080;
     border-radius: 2px;
     font-size: 22px;
-}
+} */
 
-body {
+/* body  {
     text-align: center;
     font-family: 'Arial', sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
+} */
 
 .rodape{
 
@@ -51,47 +58,32 @@ body {
     color: #ffffff;
 }
 
-.main_banner {
-    margin-top: -150px;
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.main_banner img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 0;
-}
-
-.logo {
+/* .logo {
     max-width: 100%;
     margin-top: -80px;
-}
+} */
 
-.solution {
-    margin-top: 40px;
-    font-size: 35px;
-    font-family: "Times", sans-serif;
-    color: #dd5415;
-}
-
-.solution img {
+.logo img {
     max-width: 100%;
     height: auto;
-    margin-top: 0px;
-}
-
-h2 {
-    text-align: center;
-}
-
-.button {
-    margin-top: 20px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .header-buttons {
-    text-align: right;
+    /* text-align: right;
     position: absolute;
-    top: 70px;
-    right: 20px;
+    top: 110px;
+    right: 20px; */
+    display: flex;
+    justify-content: space-between;
+    margin: 14px;    
 }
 
 .header-buttons a {
@@ -102,6 +94,49 @@ h2 {
     border-radius: 10px;
     font-size: 19px;
     margin-left: 10px;
+}
+
+.main {
+    display: grid;
+    text-align: center;
+    column-gap: 25px;
+    row-gap: 30px;
+    margin: 30px 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'banner benefits';
+}
+
+.main_banner {
+    /* margin-top: 20px; */
+    grid-area: banner;
+}
+
+.main_banner img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+.solution img {
+    margin-top: 0px;
+    max-width: 100%;
+    height: auto;
+    font-family: "Times", sans-serif;
+}
+
+.benefits {
+    grid-area: benefits;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.benefits ul li {
+    list-style: none;
 }
 
 @media screen and (max-width: 600px) {
