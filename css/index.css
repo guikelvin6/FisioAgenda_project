@@ -188,3 +188,13 @@ h3 {
 .sobre-nos p {
     line-height: 1.5;
 }
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+ 
+:target {
+  scroll-margin-top: .8em;
+}
